@@ -15,7 +15,7 @@ export function generateLifeCalendar(options) {
         timezone,
         dob,
         lifespan = 80,
-        clockHeight = 0.22
+        clockHeight = 0.32
     } = options;
 
     // Get current date in user's timezone
