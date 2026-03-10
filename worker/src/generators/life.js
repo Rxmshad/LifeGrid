@@ -87,7 +87,7 @@ export function generateLifeCalendar(options) {
         } else if (isLived) {
             fillColor = colorWithAlpha(parseColor(accentColor), 0.75);
         } else {
-            fillColor = colorWithAlpha('#ffffff', 0.06);
+            fillColor = colorWithAlpha('#2E4C8C', 0.15);
         }
 
         content += circle(cx, cy, radius, fillColor);
@@ -99,7 +99,7 @@ export function generateLifeCalendar(options) {
     const statsY = startY + gridHeight + (height * 0.025);
 
     const statsContent = `<tspan fill="${parseColor(accentColor)}" font-family="Inter" font-weight="500">${weeksRemaining.toLocaleString()} weeks left</tspan>` +
-        `<tspan fill="rgba(255,255,255,0.5)" font-family="'SF Mono', 'Menlo', 'Courier New', monospace" font-weight="400"> · ${progressPercent}% lived</tspan>`;
+        `<tspan fill="#2E4C8C" font-family="'SF Mono', 'Menlo', 'Courier New', monospace" font-weight="400"> · ${progressPercent}% lived</tspan>`;
 
     content += text(width / 2, statsY, statsContent, {
         fontSize: width * 0.022,
